@@ -10,14 +10,14 @@ import headerBg from "../../../public/assets/img/bg/hero-bg.jpg"
 import Menu from "./Menu";
 
 const HearderThree = () => {
-  const {toggleSideMenu} = useContext(AppContext) as AppContextType;
+  const { toggleSideMenu } = useContext(AppContext) as AppContextType;
   const scrollDirection = useScrollDirection(null)
   return (
     <>
       <header>
-        <div className="bd-header transparent-header">
-        <div className="bd-header__bg" style={{ backgroundImage: `url(${headerBg.src})`}}></div>
-          <div
+        <div className="bd-header transparent-header ">
+          <div className="bd-header__bg" style={{ backgroundImage: `url(${headerBg.src})` }}></div>
+          {/* <div
             className="bd-header__top d-none d-xl-block"
             id="header-top_sticky"
           >
@@ -56,14 +56,14 @@ const HearderThree = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div
             id="header-sticky"
-            className={`bd-header-bottom bd-header-2__main theme-bg ${
-              scrollDirection === "down" ? "header-sticky" : " "
-            }`}
+            className={`bd-header-bottom  bd-header-2__main theme-bg ${scrollDirection === "down" ? "header-sticky" : " "
+              }`}
           >
+
             <div className="container">
               <div className="mega-menu-wrapper p-relative">
                 <div className="d-flex align-items-center justify-content-between">
@@ -72,7 +72,7 @@ const HearderThree = () => {
                       <Link href="/">
                         <Image
                           src={logoBlack}
-                          style={{ width: "100%", height: "auto" }}
+                          style={{ width: "60%", height: "auto" }}
                           alt="image not found"
                         />
                       </Link>
@@ -81,11 +81,11 @@ const HearderThree = () => {
                   <div className="bd-main-menu d-none d-lg-flex align-items-center">
                     <nav id="mobile-menu">
                       <ul>
-                        <Menu/>
+                        <Menu />
                       </ul>
                     </nav>
                   </div>
-                  <div className="bd-header__bottom-right d-flex justify-content-end align-items-center">
+                  {/* <div className="bd-header__bottom-right d-flex justify-content-end align-items-center">
                     <div className="bd-header-lang d-none d-xl-flex">
                       <div className="bd-header-lang__item">
                         <Link className="active" href="#">
@@ -99,12 +99,12 @@ const HearderThree = () => {
                         <Link href="#">de</Link>
                       </div>
                     </div>
-                  </div>
-                  <div onClick={toggleSideMenu} className="bd-header-hamburger offcanvas-open-btn d-xl-none is-black">
+                  </div> */}
+                  {/* <div onClick={toggleSideMenu} className="bd-header-hamburger offcanvas-open-btn d-xl-none is-black">
                     <span></span>
                     <span></span>
                     <span></span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

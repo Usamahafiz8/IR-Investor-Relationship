@@ -1,91 +1,37 @@
-import Image from "next/image";
 import React from "react";
-import wellCome_2 from "../../../public/assets/img/bg/welcome-bg-2.jpg";
-import wellCome_3 from "../../../public/assets/img/bg/welcome-bg-3.jpg";
-import Link from "next/link";
+
+import "./home.css"; // Assuming you have your custom styles in home.css
+
+
+const data = [
+  {
+    heading: "Our Mission",
+    description: "Zacks Small Cap Research coverage specifically looks to focus on small and micro-cap companies that are under followed or under valued by Wall Street."
+  },
+  {
+    heading: "Our Process",
+    description: "The Zacks Small-Cap analyst team has an average of 20 years' experience in the investment field. We conduct significant due diligence in an effort to maintain the highest quality small-cap universe."
+  },
+  {
+    heading: "Our Valuations",
+    description: "Zacks SCR is a division of Zacks Investment Research (ZIR). ZIR is our parent company and also the parent company of Zacks.com."
+  }
+];
+
 const AboutSection = () => {
-  
   return (
     <>
-      <section className="bd-about__area pt-150 pb-150 bg-theme-2">
+      <section className="bd-about__area pt-150 pb-150" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5))", height: "75vh", color: "white" }}>
         <div className="container">
-          <div
-            className="row align-items-center g-4 g-lg-0 mb-5 mb-lg-0 wow fadeInUp"
-            data-wow-delay=".5s"
-          >
-            <div className="col-lg-6">
-              <div className="section-image about-4__img">
-                <Image
-                  className="img-full"
-                  src={wellCome_2}
-                  style={{ width: "auto", height: "auto" }}
-                  alt="image not found"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="section-content p-lg-5">
-                <div className="bd-section__title-wrapper">
-                  <p className="bd-section__subtitle mb-20">About us</p>
-                  <h2 className="bd-section__title bd-facility-title mb-30">
-                    We have 13+ years of Experience{" "}
-                  </h2>
-                  <p className="mb-30">
-                    The Gage Hotel offers unforgettable food and drink options.
-                    A memorable stay with delicious breakfast Join us in
-                    celebrating the new year with a little special surprise from
-                    our end.
-                  </p>
-                  <div className="section-btn">
-                    <Link href="/about" className="bd-btn theme-btn">
-                      About us
-                      <span>
-                        <i className="fa-regular fa-arrow-right-long"></i>
-                      </span>
-                    </Link>
-                  </div>
+          <div className="about-items">
+            {data.map((item, index) => (
+              <div key={index} className="about-item">
+                <div className="module_item-title--grow-underline"> {/* Add class for underline growth */}
+                  {item.heading}
                 </div>
+                <div className="about-description">{item.description}</div>
               </div>
-            </div>
-          </div>
-          <div
-            className="row align-items-center g-4 g-lg-0 mb-0 mb-lg-0 wow fadeInUp"
-            data-wow-delay=".5s"
-          >
-            <div className="col-lg-6 order-lg-2">
-              <div className="section-image about-4__img">
-                <Image
-                  className="img-full"
-                  src={wellCome_3}
-                  style={{ width: "auto", height: "auto" }}
-                  alt="image not found"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6 order-lg-1">
-              <div className="section-content p-lg-5">
-                <div className="bd-section__title-wrapper">
-                  <p className="bd-section__subtitle mb-20">Rooms</p>
-                  <h2 className="bd-section__title bd-facility-title mb-30">
-                    Experience Luxury at Our Royel Hotel{" "}
-                  </h2>
-                  <p className="mb-30">
-                    The Gage Hotel offers unforgettable food and drink options.
-                    A memorable stay with delicious breakfast Join us in
-                    celebrating the new year with a little special surprise from
-                    our end.
-                  </p>
-                  <div className="section-btn">
-                    <Link href="/room-one" className="bd-btn theme-btn">
-                      Choose room{" "}
-                      <span>
-                        <i className="fa-regular fa-arrow-right-long"></i>
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

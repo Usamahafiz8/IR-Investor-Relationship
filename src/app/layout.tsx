@@ -25,6 +25,7 @@ export default function RootLayout({
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <link rel="icon" href="/favicon.png" />
+          <link href="./globals.css" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=Barlow:wght@300;400;500;600;700;800&family=Gilda+Display&display=swap" rel="stylesheet"></link>
         </head>
 

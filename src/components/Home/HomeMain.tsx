@@ -10,19 +10,23 @@ import FeedBackSection from "./FeedBackSection";
 import OffersSection from "./OffersSection";
 import LetestNewsSection from "./LetestNewsSection";
 import GallarySection from "./GallarySection";
+import HomeBanner from "./Banner";
+import NewsSection from "./NewsSection";
 const HomeMain = () => {
   return (
     <>
-      <HeroSection />
-      <FeatureArea/>
+      <HomeBanner />
       <AboutSection/>
-      <AmenitiesSection/>
-      <RoomSuiteSection/>
-      <SpeacilaFeaturesSection clssOverflow=" "/>
-      <FeedBackSection/>
-      <GallarySection/>
-      <OffersSection/>
-      <LetestNewsSection/>
+      <NewsSection/>
+      {/* <HeroSection /> */}
+      {/* <SpeacilaFeaturesSection clssOverflow=" " /> */}
+      {/* <FeatureArea/> */}
+      {/* <AmenitiesSection/> */}
+      {/* <RoomSuiteSection/> */}
+      {/* <FeedBackSection/> */}
+      {/* <GallarySection/> */}
+      {/* <OffersSection/> */}
+      {/* <LetestNewsSection/> */}
     </>
   );
 };

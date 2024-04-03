@@ -31,11 +31,14 @@ const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
       ) : (
         <>
           <BacktoTop />
+          <HearderThree />
+          {children}
+          <FooterThree />
 
-          {(() => {
+          {/* {(() => {
             switch (pathName) {
               case "/":
-                return <HeaderOne />;
+                return <HearderThree />;
               case "/home-two":
                 return <HeaderTwo />;
               case "/home-four":
@@ -43,11 +46,9 @@ const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
               default:
                 return <HearderThree />;
             }
-          })()}
+          })()} */}
 
-          {children}
-
-          {(() => {
+          {/* {(() => {
             switch (pathName) {
               case "/":
                 return <Footer customeClass="bd-footer bg-theme-2" />;
@@ -58,7 +59,7 @@ const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
               default:
                 return <FooterTwo />;
             }
-          })()}
+          })()} */}
 
           {(pathName !== "/home-four" || window.innerWidth < 991) && (
             <OffCanvasMain />
