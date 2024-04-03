@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+// =============== Success CSS START HERE ================
+
+.bd-sucess {
+    &-main {
+        background: var(--bd-common-white);
+        padding: 40px;
+        .bd-section__title-wrapper {
+            i.fa-check {
+                height: 60px;
+                width: 60px;
+                border-radius: 50px;
+                line-height: 60px;
+                background: #008f20;
+                color: var(--bd-common-white);
+                margin-bottom: 15px;
+                text-align: center;
+                font-size: 32px;
+            }
+            .bd-section__subtitle {
+                margin-bottom: 25px;
+            }
+            .bd-section__title {
+                margin-bottom: 0px;
+            }
+        }
+        .bd-sucess-thanks-info {
+            text-align: center;
+            ul {
+                padding: 14px 24px;
+                background: linear-gradient(90deg,rgba(41,66,203,.03),rgba(39,61,177,.03));
+                margin-bottom: 30px;
+                text-align: left;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    padding: 12px 0;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #ebebeb;
+                    }
+                }
+            }
+        }
+    }
+}

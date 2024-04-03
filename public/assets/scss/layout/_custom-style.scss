@@ -1,0 +1,86 @@
+@use '../utils' as *;
+
+//===============41. AMENITIES CSS START HERE ================
+
+
+.ryl-overflow-none{
+    .swiper, .swiper-container {
+        overflow: visible;
+    }
+}
+
+.ryl-pagination-end{
+    .ryl-pagination{
+        justify-content: flex-end;
+        @media #{$md, $sm, $xs} {
+            justify-content: flex-start;
+        }
+    }
+}
+.ryl-pagaination-buttom{
+       bottom: 70px !important;
+}
+.ryl-pagination-end{
+    justify-content: flex-end;
+    bottom: 40px !important;
+    padding-right: 40px;
+    @media #{$xs}{
+        justify-content: center;
+        bottom: 0px;
+        padding-right: 0px;
+    }
+    
+}
+
+.icon-white button{
+    color: #fff;
+}
+
+.ryl-review-bottom{
+    .bd-roomview__pagination{
+        bottom: 65px !important;
+        @media #{$xs} {
+            bottom: 120px !important;
+        }
+    }
+}
+
+.zindex-5{
+    z-index: 5 !important;
+}
+.ryl-block .react-datepicker-wrapper {
+    display: block;
+}
+
+
+.ryl-slider2-pagination{
+    ul.slick-dots {
+        position: absolute;
+        top: 0;
+        transform: translate(-50%);
+        right: 35%;
+        flex-direction: column;
+        gap: 20px;
+        display: flex !important;
+        width: auto;
+        justify-content: center;
+        bottom: 0;
+        @media #{$lg} {
+            right: 31%;
+        }
+    }
+}
+.modal-video{
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+
+.col-custom.active {
+	background-color: transparent;
+}
+
+@media #{$md, $sm, $xs} {
+    .bd-gallery-active{
+        margin: 0 10px;
+    }
+}
