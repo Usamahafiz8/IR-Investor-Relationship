@@ -61,3 +61,16 @@ export interface faqInterFace {
   title: string;
   details: string;
 }
+
+// interFace.ts
+export interface analystInterface {
+  id: number;
+  name: string;
+  position: string;
+  experience: string;
+  sectorsCovered: string[];
+  education: string;
+  certifications: string[];
+  details: string[]; // Adjust this to be an array of strings
+  socialMedia: string;
+}

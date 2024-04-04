@@ -8,24 +8,23 @@ import Menu from "./Menu";
 import { AppContextType } from "@/interFace/interFace";
 import { AppContext } from "@/contextApi/AppProvider";
 const HeaderTwo = () => {
-  const {toggleSideMenu} = useContext(AppContext) as AppContextType
+  const { toggleSideMenu } = useContext(AppContext) as AppContextType
   const scrollDirection = useScrollDirection(null)
-  
+
   return (
     <>
       <header>
         <div className="bd-header transparent-header">
-          <div id="header-sticky" className={`bd-header-3 is-transparent ${
-            scrollDirection === "down" ? "header-sticky" : " "
-          }`}>
-            <div className="container">
+          <div id="header-sticky" className={`bd-header-3 is-transparent ${scrollDirection === "down" ? "header-sticky" : " "
+            }`}>
+            <div className="container" >
               <div className="mega-menu-wrapper p-relative">
                 <div className="d-flex align-items-center  justify-content-between">
                   <div className="bd-header__bottom-left">
                     <div className="bd-header__logo">
                       <Link href="/">
                         <Image
-                          style={{ width: "60%", height: "60%" }}
+                          style={{ width: "50%", height: "50%" }}
                           src={logo}
                           alt="image not found"
                         />
@@ -35,7 +34,7 @@ const HeaderTwo = () => {
                   <div className="bd-main-menu d-~none d-lg-flex align-items-center is-white">
                     <nav id="mobile-menu">
                       <ul>
-                        <Menu/>
+                        <Menu />
                       </ul>
                     </nav>
                   </div>

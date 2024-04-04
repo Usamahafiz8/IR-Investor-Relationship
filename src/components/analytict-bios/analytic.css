@@ -1,0 +1,51 @@
+.home-banner {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-image: url('../../../public/assets/img/banner/HomePageBanner.jpg'); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../public/assets/img/banner/HomePageBanner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Default height for smaller screens */
+  .home-banner {
+    height: 70vh;
+  }
+  
+  /* Adjust height for medium screens */
+  @media (min-width: 768px) {
+    .home-banner {
+      height: 60vh;
+    }
+  }
+  
+  /* Adjust height for large screens */
+  @media (min-width: 1200px) {
+    .home-banner {
+      height: 70vh;
+    }
+  }
+  
+  
+  /* Add this CSS to your home.css file */
+  .swiper-button-next,
+  .swiper-button-prev {
+  color: white !important; /* Set the color of navigation arrows to white */
+  }
+  
+  
+  .banner_date {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 28px;
+  }
+  
+  .banner_heading {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    color:white
+  }
+  

@@ -99,6 +99,13 @@ const menu_data = [
     link: "/contact",
     pluseInco: false,
   },
+  {
+    id: 6,
+    hasDropdown: false,
+    title: "Analyst Bios",
+    link: "/analyst-bios",
+    pluseInco: false,
+  },
 ];
 
 export default menu_data;
