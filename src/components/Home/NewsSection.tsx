@@ -24,7 +24,7 @@ const data = [
 const NewsSection = () => {
     return (
         <>
-            <section className="bd-about__area pt-150 pb-150" style={{ backgroundImage: " rgba(255, 255, 255, 0.5))", color: "white", textAlign: "center" }}>
+            <section className="bd-about__area pt-50 pb-50" style={{  textAlign: "center" }}>
                 <div className="container">
                     <div style={{
                         marginBottom: "56px", color: "black", fontSize: "2em", fontWeight: "500"

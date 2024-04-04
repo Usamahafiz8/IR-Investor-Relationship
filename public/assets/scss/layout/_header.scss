@@ -52,7 +52,7 @@
 
         &.header-sticky {
             background: var(--bd-common-black);
-            padding: 20px 0;
+            padding: 10px 0;
         }
     }
 
@@ -247,10 +247,10 @@
 }
 
 .bd-header-3 {
-    padding: 24px 0;
+    padding: 10px 0;
 
     &.header-sticky {
-        padding: 19px 0;
+        padding: 10px 0;
     }
 
     &:not(.header-sticky) {
@@ -284,7 +284,7 @@
 
 .bd-header-2__main {
     @media #{$lg,$md,$sm,$xs} {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 }
 

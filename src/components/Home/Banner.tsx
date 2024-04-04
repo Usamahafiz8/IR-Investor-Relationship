@@ -15,21 +15,28 @@ const content = [
 const HomeBanner: React.FC = () => {
   return (
     <section className="home-banner">
-      <div className="container">
+      <div className="container" >
         <Swiper
           slidesPerView={1}
           navigation={true}
           modules={[Navigation, Autoplay]}
           className="mySwiper"
           autoplay={{ delay: 3000 }}
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "center", }}
+
+          loop={true}
         >
           {content.map((item, index) => (
             <SwiperSlide key={index}>
-              <div style={{ color: item.textColor }}>
-                <i style={{ fontSize: '2em' }}>{item.heading}</i>
-                <br />
-                <b className="left-heading">{item.date}</b>
+              <div style={{
+                display: 'flex', justifyContent: "center"
+              }}>
+
+                <div style={{ color: item.textColor, width: "90%", marginTop: '16px', }}>
+                  <i className="banner_heading" >{item.heading}</i>
+                  <br />
+                  <b className="banner_date">{item.date}</b>
+                </div>
               </div>
             </SwiperSlide>
           ))}

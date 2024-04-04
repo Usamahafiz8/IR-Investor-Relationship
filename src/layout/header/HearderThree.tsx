@@ -15,7 +15,7 @@ const HearderThree = () => {
   return (
     <>
       <header>
-        <div className="bd-header transparent-header ">
+        <div className="zbd-header transparent-header ">
           <div className="bd-header__bg" style={{ backgroundImage: `url(${headerBg.src})` }}></div>
           {/* <div
             className="bd-header__top d-none d-xl-block"

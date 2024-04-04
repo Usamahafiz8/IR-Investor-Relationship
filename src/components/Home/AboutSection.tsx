@@ -21,17 +21,20 @@ const data = [
 const AboutSection = () => {
   return (
     <>
-      <section className="bd-about__area pt-150 pb-150" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5))", height: "75vh", color: "white" }}>
+      <section className="bd-about__area pt-150 pb-50" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.5))",  color: "white" }}>
         <div className="container">
-          <div className="about-items">
-            {data.map((item, index) => (
-              <div key={index} className="about-item">
-                <div className="module_item-title--grow-underline"> {/* Add class for underline growth */}
-                  {item.heading}
+          <div style={{ marginTop: "-200px" }}>
+            <div className="about-items">
+
+              {data.map((item, index) => (
+                <div key={index} className="about-item">
+                  <div className="module_item-title--grow-underline"> {/* Add class for underline growth */}
+                    {item.heading}
+                  </div>
+                  <div className="about-description">{item.description}</div>
                 </div>
-                <div className="about-description">{item.description}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
