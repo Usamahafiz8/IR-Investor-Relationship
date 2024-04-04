@@ -31,9 +31,9 @@ const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
       ) : (
         <>
           <BacktoTop />
-          <HearderThree />
+          <HeaderTwo />
           {children}
-          <FooterThree />
+          {/* <FooterThree /> */}
 
           {/* {(() => {
             switch (pathName) {
@@ -47,17 +47,21 @@ const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
                 return <HearderThree />;
             }
           })()} */}
+          {/* <Footer customeClass="bd-footer bg-theme-2" />; */}
+          {/* <FooterThree />; */}
+          {/* <FooterTwo />; */}
+          <Footer customeClass="bd-footer footer-bg" />;
 
           {/* {(() => {
             switch (pathName) {
               case "/":
-                return <Footer customeClass="bd-footer bg-theme-2" />;
+                return 
               case "/home-two":
-                return <Footer customeClass="bd-footer footer-bg" />;
+                return
               case "/home-four":
-                return <FooterThree />;
+                return 
               default:
-                return <FooterTwo />;
+                return 
             }
           })()} */}
 

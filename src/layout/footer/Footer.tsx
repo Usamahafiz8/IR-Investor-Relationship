@@ -6,7 +6,7 @@ interface classType{
 const Footer = ({customeClass}:classType) => {
   return (
     <>
-      <footer className={customeClass}>
+      <footer className={customeClass} >
         <div className="bd-footer-top pt-100 pb-30">
           <div className="container">
             <div className="row justify-content-between">
@@ -132,7 +132,7 @@ const Footer = ({customeClass}:classType) => {
         <div className="bd-footer-bottom d-flex align-items-center">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+            <div className="col-md-6">
                 <div className="bd-footer-copyright">
                   <p>
                     Copyright &amp; Design By{" "}

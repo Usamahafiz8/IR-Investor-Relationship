@@ -20,26 +20,26 @@ const HeaderTwo = () => {
           }`}>
             <div className="container">
               <div className="mega-menu-wrapper p-relative">
-                <div className="d-flex align-items-center justify-content-between">
+                <div className="d-flex align-items-center  justify-content-between">
                   <div className="bd-header__bottom-left">
                     <div className="bd-header__logo">
                       <Link href="/">
                         <Image
-                          style={{ width: "100%", height: "100%" }}
+                          style={{ width: "60%", height: "60%" }}
                           src={logo}
                           alt="image not found"
                         />
                       </Link>
                     </div>
                   </div>
-                  <div className="bd-main-menu d-none d-lg-flex align-items-center is-white">
+                  <div className="bd-main-menu d-~none d-lg-flex align-items-center is-white">
                     <nav id="mobile-menu">
                       <ul>
                         <Menu/>
                       </ul>
                     </nav>
                   </div>
-                  <div className="bd-header__bottom-right d-flex justify-content-end align-items-center">
+                  {/* <div className="bd-header__bottom-right d-flex justify-content-end align-items-center">
                     <div className="bd-header-top-btn mr-30 d-none d-xl-flex">
                       <Link href="/login" className="bd-btn fill-btn">
                         book now
@@ -53,7 +53,7 @@ const HeaderTwo = () => {
                       <span></span>
                       <span></span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
