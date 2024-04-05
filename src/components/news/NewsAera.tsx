@@ -58,7 +58,7 @@ const NewsAera: React.FC = () => {
                   <h5 className="bd-blog-3-sidebar-title">Latest News</h5>
                   <div className="bd-blog-3-latest">
                     <ul>
-                      {blogs.slice(5, 8).map((item) => (
+                      {blogs.map((item) => (
                         <li key={item.id}>
                           <div className="bd-blog-3-latest-content">
                             {/* <div className="bd-blog-3-latest-thumb">
