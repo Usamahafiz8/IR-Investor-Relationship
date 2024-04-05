@@ -1,4 +1,4 @@
-import menu_data from "@/data/menu-data";
+import menu_data from "@/data/menu-data"; // Assuming this is the correct path to your menu data file
 import Link from "next/link";
 import React from "react";
 

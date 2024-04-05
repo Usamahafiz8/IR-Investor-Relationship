@@ -1,21 +1,22 @@
+import React from "react";
+import Breadcrumb from "../common/breadcrumb/Breadcrumb";
+import WellcomeAreaSec from "../Home2/WellcomeAreaSec";
+import AwardSec from "./AwardSec";
+import PricingPlanSec from "../Home-4/PricingPlanSec";
+import TestimonailSec from "../Home-3/TestimonailSec";
+import HrLine from "../common/HrLine/HrLine";
+import ServicesSlideSce from "../Home-4/ServicesSlideSce";
+import FaqTwo from "./FaqTwo";
+import Brands from "./Brands";
 
-import React from 'react';
-import Breadcrumb from '../common/breadcrumb/Breadcrumb';
-import WellcomeAreaSec from '../Home2/WellcomeAreaSec';
-import AwardSec from './AwardSec';
-import PricingPlanSec from '../Home-4/PricingPlanSec';
-import TestimonailSec from '../Home-3/TestimonailSec';
-import HrLine from '../common/HrLine/HrLine';
-import ServicesSlideSce from '../Home-4/ServicesSlideSce';
-import FaqTwo from './FaqTwo';
-import Brands from './Brands';
-
-import AnalyticBanner from './Banner';
+import AnalyticBanner from "./Banner";
+import CommonBanner from "../common/Banner";
 
 const AnalyticMain = () => {
   return (
     <>
-    <AnalyticBanner/>
+      <CommonBanner Heading={"Analyst Bios"} />
+      {/* <AnalyticBanner /> */}
       {/* <Breadcrumb title="About Us" /> */}
       {/* <WellcomeAreaSec/> */}
       {/* <AwardSec/> */}
