@@ -34,8 +34,8 @@ const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
           <HeaderTwo />
           {children}
 
-          <Footer customeClass="bd-footer footer-bg" />;
           {/* <FooterThree /> */}
+          <Footer customeClass="bd-footer footer-bg" />;
           {/* {(() => {
             switch (pathName) {
               case "/":

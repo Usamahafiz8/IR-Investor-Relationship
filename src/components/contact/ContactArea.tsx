@@ -3,7 +3,7 @@ import React from "react";
 const ContactArea = () => {
   return (
     <>
-      <section className="bd-contact-area x-clip pb-90">
+      <section className="bd-contact-area x-clip pb-90 pt-50">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 mb-60">

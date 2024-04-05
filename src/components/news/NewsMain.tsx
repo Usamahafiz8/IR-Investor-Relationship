@@ -6,7 +6,7 @@ const NewsMain = () => {
   return (
     <>
       <CommonBanner Heading={"News"} />
-<NewsAera/>
+      <NewsAera />
     </>
   );
 };
