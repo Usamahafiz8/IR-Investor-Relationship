@@ -1,4 +1,5 @@
 import OfferMain from '@/components/offers/OfferMain';
+import OurPartnerMain from '@/components/our-partner/OurPartnerMain';
 import WrapperCommon from '@/layout/WrapperCommon';
 import React from 'react';
 
@@ -7,7 +8,9 @@ const OurPartner = () => {
         <>
             <WrapperCommon>
                 <main>
-                    <OfferMain/>
+                    {/* <OfferMain/> */}
+  
+  <OurPartnerMain/>
                 </main>
             </WrapperCommon>
         </>

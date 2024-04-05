@@ -104,7 +104,7 @@ const menu_data = [
     id: 9,
     hasDropdown: false,
     title: "Israel",
-    link: "/",
+    link: "/israel",
     pluseInco: false,
   },
 ];
