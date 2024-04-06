@@ -29,18 +29,24 @@ const FaqTwo: React.FC = () => {
                       type="button"
                     >
                       {/* {item.title} */}
-                      &nbsp; {item.position} {/* Displaying position */}
+                      &nbsp; {item.name} {/* Displaying position */}
                     </button>
                   </h2>
+                  
                   <div className={`accordion-collapse collapse ${activeItem === item.id && active ? "show" : ""}`}>
                     <div className="accordion-body">
+                      <h6>{item.position}</h6>
+                    <p>
+                    {item.experience}
+                  </p>
                       {/* Iterate over details and display each */}
-                      {item.details.map((detail: string, index: number) => (
-                        <p key={index}>{detail}</p>
+                      {item.sectorsCovered.map((detail: string, index: number) => (
+                        <p className="" key={index}>{detail}</p>
                       ))}
-                      <p><b>Education:</b> {item.education}</p> {/* Display education */}
-                      <p><b>Certifications:</b> {item.certifications.join(", ")}</p> {/* Display certifications */}
-                      <span className="badge text-bg-primary">Follow {item.socialMedia}</span> {/* Display social media */}
+                      {/* <p><b>Education:</b> {item.education}</p> 
+                      <p><b>Certifications:</b> {item.certifications.join(", ")}</p>  */}
+                      {item?.socialMedia && 
+                      <span className="badge text-bg-primary">Follow {item.socialMedia}</span>} {/* Display social media */}
                     </div>
                   </div>
                 </div>
