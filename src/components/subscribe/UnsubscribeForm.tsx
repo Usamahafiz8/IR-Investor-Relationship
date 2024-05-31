@@ -30,7 +30,7 @@ const UnsubscribeForm = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ customerId, returnUrl: window.location.origin })
+                body: JSON.stringify({ customerId, returnUrl:"https://ir-investor-relationship.vercel.app/" })
             });
 
             const portalData = await portalResponse.json();
@@ -39,7 +39,7 @@ const UnsubscribeForm = () => {
                 throw new Error(portalData.error || 'Failed to create customer portal session');
             }
 
-            window.location.href = portalData.url;
+            // window.location.href = portalData.url;
         } catch (error) {
             setMessage('An error occurred. Please try again later.');
         }
