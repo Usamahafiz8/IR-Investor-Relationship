@@ -12,7 +12,8 @@ const content = [
   { heading: "MIRA Making Strides Toward Breakthrough Treatment", date: "April 02, 2024", textColor: "white" }
 ];
 
-const HomeBanner: React.FC = () => {
+const HomeBanner = ({ reports }: any) => {
+
   return (
     <section className="home-banner">
       <div className="container" >
@@ -26,16 +27,21 @@ const HomeBanner: React.FC = () => {
 
           loop={true}
         >
-          {content.map((item, index) => (
-            <SwiperSlide key={index}>
+          {reports?.map((item: any) => (
+            <SwiperSlide key={item.id}>
               <div style={{
                 display: 'flex', justifyContent: "center"
               }}>
-
-                <div style={{ color: item.textColor, width: "90%", marginTop: '16px', }}>
-                  <i className="banner_heading" >{item.heading}</i>
+                <div style={{ color: 'white', width: "75%", marginTop: '16px', textAlign: 'center' }}>
+                  <i className="block text-lg md:text-2xl font-semibold">
+                    {item?.attributes?.website?.data?.attributes?.ticker} : &nbsp;
+                    {item?.attributes?.title}
+                  </i>
                   <br />
-                  <b className="banner_date">{item.date}</b>
+                  <span className="block text-sm md:text-lg  ">
+                    {new Date(item?.attributes?.publishedAt).toLocaleDateString()}
+
+                  </span>
                 </div>
               </div>
             </SwiperSlide>

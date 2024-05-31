@@ -26,8 +26,9 @@ const MobileMenu = () => {
       {menu_data?.map((item) => (
         <li
           key={item.id}
-          className={` ${item.megaMenu === true ? "has-dropdown has-mega-menu " : " "
-            } ${item.hasDropdown === true ? "has-dropdown" : " "}`}
+          className={` 
+        } ${item.hasDropdown === true ? "has-dropdown" : " "}`}
+        // ${item.megaMenu === true ? "has-dropdown has-mega-menu " : " "
         >
           <Link onClick={toggleSideMenu} href={item.link}>{item.title}</Link>
           {item.hasDropdown === true && (
@@ -41,9 +42,9 @@ const MobileMenu = () => {
           )}
 
           {item.hasDropdown === true && <Link href="#" onClick={() => handleOpenSubmenu(item.id)} className="mean-expand" style={{ fontSize: "18px" }}><i className={`bi fa-light ${menuNum === item.id && open ? "fa-minus" : "fa-plus"}`}></i></Link>}
-          {item.megaMenu === true && <Link href="#" onClick={() => handleOpenSubmenu(item.id)} className="mean-expand" style={{ fontSize: "18px" }}><i className={`bi fa-light ${menuNum === item.id && open ? "fa-minus" : "fa-plus"}`}></i></Link>}
+          {/* {item.megaMenu === true && <Link href="#" onClick={() => handleOpenSubmenu(item.id)} className="mean-expand" style={{ fontSize: "18px" }}><i className={`bi fa-light ${menuNum === item.id && open ? "fa-minus" : "fa-plus"}`}></i></Link>} */}
 
-          {item.megaMenu === true && (
+          {/* {item.megaMenu === true && (
             <ul className="mega-menu">
               {item.pages === true &&
                 item.mega_menus.map((i, index) => (
@@ -62,7 +63,7 @@ const MobileMenu = () => {
                   </li>
                 ))}
             </ul>
-          )}
+          )} */}
         </li>
       ))}
     </>

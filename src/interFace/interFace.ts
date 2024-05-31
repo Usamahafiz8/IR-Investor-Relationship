@@ -1,10 +1,28 @@
 export interface AppContextType {
   sideMenuOpen?: boolean;
+  loginUser:any;
   toggleSideMenu?: () => void;
+  loginUserStorage:(value: boolean) => any;
+  userEmailStorage: (value: any) => any;
+  updateWebsiteinfo: (value: any) => any;
+  updateUserinfo:(value: any) => any;
+  updateTabName: (value: any) => any;
+  updatePageName: (value: any) => any;
+  updateOverviewPageInfo: (value: any) => any;
   scrollDirection?: string;
   setScrollDirection?: React.Dispatch<React.SetStateAction<string>> | undefined;
   roomId?: number;
   setRoomId?: React.Dispatch<React.SetStateAction<number>>;
+  UserEmail?:any;
+  websiteInfo?: any;
+  userInfo?: any;
+  overviewPageInfo: any;
+  setWebsiteInfo?: React.Dispatch<React.SetStateAction<any>>;
+  setTabName?: React.Dispatch<React.SetStateAction<any>>;
+  tabName?: string;
+  setPageName?:React.Dispatch<React.SetStateAction<any>>;
+  pageName?: string;
+  websiteName?: any;
 }
 export interface idType {
   id?: number;

@@ -5,11 +5,8 @@ import React from 'react';
 const BlogPage = () => {
     return (
         <>
-            <WrapperCommon>
-                <main>
+       
                     <BlogMain/>
-                </main>
-            </WrapperCommon>
         </>
     );
 };

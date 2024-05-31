@@ -1,18 +1,20 @@
 import OfferMain from '@/components/offers/OfferMain';
 import OurPartnerMain from '@/components/our-partner/OurPartnerMain';
 import WrapperCommon from '@/layout/WrapperCommon';
+import Footer from '@/layout/footer/Footer';
+import HeaderTwo from '@/layout/header/HeaderTwo';
 import React from 'react';
 
 const OurPartner = () => {
     return (
         <>
-            <WrapperCommon>
-                <main>
-                    {/* <OfferMain/> */}
-  
-  <OurPartnerMain/>
-                </main>
-            </WrapperCommon>
+            <HeaderTwo />
+            <OurPartnerMain />
+            <Footer customeClass="" />;
+            {/* <WrapperCommon>
+                <main> 
+            <OfferMain/> 
+            </WrapperCommon> */}
         </>
     );
 };

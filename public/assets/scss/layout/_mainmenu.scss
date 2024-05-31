@@ -179,14 +179,14 @@
                                 position: absolute;
                                 top: 50%;
                                 right: 25px;
-                                @include transform(translateY(-50%) rotate(-90deg));
+                                // @include transform(translateY(-50%) rotate(-90deg));
                             }
                         }
                     }
 
                     & a {
                         padding: 0px;
-                        font-size: 16px;
+                        // font-size: 16px;
                         position: relative;
                         z-index: 1;
                         width: 100%;

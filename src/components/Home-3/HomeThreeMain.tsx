@@ -8,7 +8,6 @@ import FacilitysOneSec from './FacilitysOneSec';
 import FacilitysTwoSec from './FacilitysTwoSec';
 import RealSec from './RealSec';
 import TestimonailSec from './TestimonailSec';
-import OffersSection from '../Home/OffersSection';
 import FaqSec from './FaqSec';
 import HrLine from '../common/HrLine/HrLine';
 import AwardAreaTwo from './AwardAreaTwo';
@@ -25,7 +24,6 @@ const HomeThreeMain = () => {
             <FacilitysTwoSec/>
             <RealSec/>
             <TestimonailSec/>
-            <OffersSection/>
             <FaqSec/>
             <AwardAreaTwo/>
             <RoyalLatestNewsTwo/>

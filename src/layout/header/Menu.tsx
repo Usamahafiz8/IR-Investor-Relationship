@@ -8,39 +8,38 @@ const Menu = () => {
       {menu_data?.map((item) => (
         <li
           key={item.id}
-          className={` ${
-            item.megaMenu === true ? "has-dropdown has-mega-menu" : " "
-          } ${item.hasDropdown === true ? "has-dropdown" : " "}`}
+          className={` 
+          ${item.hasDropdown ? "has-dropdown" : " "}`}
+          // ${            item.megaMenu ? "has-dropdown has-mega-menu" : " "} 
         >
           <Link href={item.link}>{item.title}</Link>
-          {item.hasDropdown === true && (
+          {item.hasDropdown && (
             <ul className="submenu">
-              {item?.submenus?.map((i, index) => (
+              {item.submenus?.map((i, index) => (
                 <li key={index}>
                   <Link href={i.link}> {i.title} </Link>
                 </li>
               ))}
             </ul>
           )}
-          {item.megaMenu === true && (
+          {/* {item.megaMenu && item.pages && item.mega_menus && (
             <ul className="mega-menu">
-              {item.pages === true &&
-                item.mega_menus.map((i, index) => (
-                  <li key={index}>
-                    <Link href="" className="mega-menu-title">
-                      {i.title}
-                    </Link>
-                    <ul>
-                      {i.submenus.map((submenu, index) => (
-                        <li key={index}>
-                          <Link href={submenu.link}> {submenu.title} </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ))}
+              {item.mega_menus.map((i, index) => (
+                <li key={index}>
+                  <Link href="" className="mega-menu-title">
+                    {i.title}
+                  </Link>
+                  <ul>
+                    {i.submenus.map((submenu, subIndex) => (
+                      <li key={subIndex}>
+                        <Link href={submenu.link}> {submenu.title} </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
             </ul>
-          )}
+          )} */}
         </li>
       ))}
     </>

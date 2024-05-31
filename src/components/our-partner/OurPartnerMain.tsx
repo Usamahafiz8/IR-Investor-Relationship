@@ -10,9 +10,8 @@ import CommonBanner from '../common/Banner';
 const OurPartnerMain = () => {
     return (
         <>
-        <CommonBanner Heading={"Our Partners"}/>
+            <CommonBanner Heading={"Our Partners"} />
             <OfferSec />
-            
         </>
     );
 };

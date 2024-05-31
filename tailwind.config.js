@@ -10,9 +10,11 @@ const rotateX = plugin(function ({ addUtilities }) {
 });
 module.exports = {
     content: [
-        './pages/*/.{js,ts,jsx,tsx,mdx}',
-        './components/*/.{js,ts,jsx,tsx,mdx}',
-        './app/*/.{js,ts,jsx,tsx,mdx}',
+        // './src/pages/*/.{js,ts,jsx,tsx,mdx}',
+        // './src/components/*/.{js,ts,jsx,tsx,mdx}',
+        // './src/app/*/.{js,ts,jsx,tsx,mdx}',
+        "./src/**/*.{js,ts,jsx,tsx,mdx}",
+        
     ],
     theme: {
         container: {
@@ -24,11 +26,11 @@ module.exports = {
             md: '768px',
             lg: '1024px',
             xl: '1142px',
-            xxl:'1920px',
+            xxl:'1520px',
         },
-        // fontFamily: {
-        //     mulish: ['Mulish', 'sans-serif' ] ,
-        // },
+        fontFamily: {
+            custom: ['var(--font-custom)'] ,
+        },
 
         extend: {
             typography: ({ theme }) => ({

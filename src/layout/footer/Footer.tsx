@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
-interface classType{
-  customeClass:string;
+interface classType {
+  customeClass: string;
 }
-const Footer = ({customeClass}:classType) => {
+const Footer = ({ customeClass }: classType) => {
   return (
     <>
       <footer className={customeClass} >
-        <div className="bd-footer-top pt-100 pb-30">
+        <div className="bd-footer-top pt-100 pb-30 bg-gray-100">
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-xl-4 col-lg-4 col-md-6">
@@ -18,38 +18,28 @@ const Footer = ({customeClass}:classType) => {
                   <div className="bd-footer-link">
                     <ul>
                       <li>
-                        <Link href="/room-one">Accommodation</Link>
+                        <Link href="/">Home</Link>
                       </li>
                       <li>
-                        <Link href="/about">About Hotel</Link>
+                        <Link href="/news">News</Link>
                       </li>
                       <li>
-                        <Link href="/dining">Dining</Link>
+                        <Link href="/">Research Reports</Link>
                       </li>
                       <li>
-                        <Link href="/contact">Location</Link>
-                      </li> 
-                      <li>
-                        <Link href="/about">Experience</Link>
+                        <Link href="/analyst-bios">Analyst Bios</Link>
                       </li>
                       <li>
-                        <Link href="">Jobs &amp; Career</Link>
+                        <Link href="/contact-us">Contact us</Link>
                       </li>
                       <li>
-                        <Link href="/event">Occasions</Link>
+                        <Link href="/tickers-list">Tickers</Link>
                       </li>
                       <li>
-                        <Link href="/contact">Get In Touch</Link>
+                        <Link href="/our-partners">Our Partners</Link>
                       </li>
-                      <li>
-                      <Link href="/dining">DINING</Link>
-                      </li>
-                      <li>
-                        <Link href="/faq">FAQ</Link>
-                      </li>
-                      <li>
-                        <Link href="/event">Events</Link>
-                      </li>
+
+
                     </ul>
                   </div>
                 </div>
@@ -62,32 +52,26 @@ const Footer = ({customeClass}:classType) => {
                   <div className="bd-footer-contact">
                     <ul>
                       <li>
-                        <i className="fas fa-paper-plane"></i> Reception:
-                        <Link href="tel:99411123456"> + 99 4 11 123 456</Link>
+                        <i className="fas fa-paper-plane"></i>
+                        <Link href="/contact-us"> + 99 4 11 123 456</Link>
                       </li>
                       <li>
-                        <i className="fas fa-phone"></i>Office:{" "}
-                        <Link href="tel:99411123456"> + 99 4 11 123 456</Link>
+                        <i className="fas fa-phone"></i>
+                        <Link href="/contact-us"> + 99 4 11 123 456</Link>
                       </li>
                       <li>
-                        <i className="fas fa-envelope"></i> E-mail:{" "}
-                        <Link href="mailto:info@theroyelpalace.com">
-                          info@theroyelpalace.com
+                        <i className="fas fa-envelope"></i>
+                        <Link href="/contact-us">
+                          info@InvestorRadar.com
                         </Link>
                       </li>
                       <li>
-                        <i className="fas fa-map-marker-alt"></i> Address:
-                        Passeig de Gracia 21
+                        <i className="fas fa-map-marker-alt"></i>
+                        <Link href="/contact-us">
+                          Passeig de Gracia 21
+                        </Link>
                       </li>
                     </ul>
-                  </div>
-                  <div className="bd-footer-btn">
-                    <Link href="/room-one" className="bd-btn fill-btn">
-                      Reserve Now{" "}
-                      <span>
-                        <i className="fa-regular fa-arrow-right-long"></i>
-                      </span>
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -96,33 +80,24 @@ const Footer = ({customeClass}:classType) => {
                   <div className="bd-footer-widget-title">
                     <h5>Subscribe Newsletter</h5>
                   </div>
-                  <div className="bd-footer-newsletter__form">
-                    <form action="#">
-                      <div className="bd-footer-newsletter__input is-black">
-                        <input type="text" placeholder="Your Email" />
-                        <button type="submit">
-                          subscribe now{" "}
-                          <i className="fa-regular fa-arrow-right-long"></i>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                  <div className="payment-methods mt-30">
-                    <strong>We accept</strong>
-                    <div className="payment-methods-icons">
-                      <span>
-                        <i className="fa-brands fa-cc-paypal"></i>
-                      </span>
-                      <span>
-                        <i className="fa-brands fa-cc-mastercard"></i>
-                      </span>
-                      <span>
-                        <i className="fa-brands fa-cc-visa"></i>
-                      </span>
-                      <span>
-                        <i className="fa-brands fa-cc-amex"></i>
-                      </span>
-                    </div>
+                  <div className="bd-footer-contact">
+                    <ul>
+                      <li>
+                        <Link href="/subscribe/free-digest">
+                          Free Digest
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/subscribe/premium-digest">
+                          Investor Radar Premium
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/subscribe/cancel-subscription">
+                          Unsubscribe
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -132,18 +107,9 @@ const Footer = ({customeClass}:classType) => {
         <div className="bd-footer-bottom d-flex align-items-center">
           <div className="container">
             <div className="row align-items-center">
-            <div className="col-md-6">
+              <div className="col-md-6">
                 <div className="bd-footer-copyright">
-                  <p>
-                    Copyright &amp; Design By{" "}
-                    <span>
-                      ©{" "}
-                      <Link href="https://themeforest.net/user/bdevs/portfolio">
-                        Bdevs
-                      </Link>
-                    </span>{" "}
-                    - 2023
-                  </p>
+                  <p>© 2024 Investor Radar. All rights reserved.</p>
                 </div>
               </div>
               <div className="col-md-6 text-md-end">

@@ -61,7 +61,7 @@ color: white !important; /* Set the color of navigation arrows to white */
   align-items: center;
   padding: 10px;
   max-width: 360px;
-  height: 200px;
+  height: auto;
   justify-content: center;
   margin: 0 auto;
   color: black;
@@ -76,7 +76,7 @@ color: white !important; /* Set the color of navigation arrows to white */
 }
 
 .module_item-title--grow-underline {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   position: relative;
   margin-bottom: 16px;
@@ -97,14 +97,11 @@ color: white !important; /* Set the color of navigation arrows to white */
   /* Transition width for smooth animation */
 }
 
-.module_item-title--grow-underline:hover::after {
-  width: 100%;
-  /* Grow width to fill on hover */
-}
 
-.about-description {
-  font-size: 12px;
-}
+
+/* .about-description {
+  font-size: 16px;
+} */
 
 
 
@@ -121,11 +118,13 @@ color: white !important; /* Set the color of navigation arrows to white */
 }
 
 .about-item {
-  padding: 10px;
-  max-width: 300px;
+  padding: 16px;
+  min-width: 320px;
+  min-height: 300px ;
+  font-size: 24px;
   margin: 10px;
   color: black;
-  background-color: whitesmoke;
+  background-color: whitesmoke; 
   transition: all 0.3s ease;
 }
 
@@ -135,7 +134,7 @@ color: white !important; /* Set the color of navigation arrows to white */
 }
 
 .about-item .about-heading {
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 500;
 }
 

@@ -15,7 +15,7 @@ import Footer from "./footer/Footer";
 import FooterThree from "./footer/FooterThree";
 interface WrapperProps {
   children: React.ReactNode;
-}
+} 
 const WrapperCommon: React.FC<WrapperProps> = ({ children }) => {
   const pathName = usePathname();
   const isLoading = useLoading(true, 100);

@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/featureData.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/featureData.ts", "src/app/[webiste]/utils/strapiApi.jsx", "src/app/webiste/[name]"],
   "exclude": ["node_modules"]
 }

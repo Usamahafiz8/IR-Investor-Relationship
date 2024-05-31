@@ -1,6 +1,7 @@
 
 
 
+import { useRouter } from 'next/navigation';
 import React from 'react';
 interface SearchFormProps {
   onSubmit: (keyword: string) => void;
@@ -8,15 +9,20 @@ interface SearchFormProps {
   keyword:string
 }
 const BlogSearchTwo: React.FC<SearchFormProps> = ({ onSubmit,setKeyword,keyword }) => {
+  const router = useRouter()
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    onSubmit(keyword);
+    router.push(`/news?search=${keyword}`)
   };
-
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    // if(keyword.length>= 0){
+    //   router.push(`/news  `)
+    // }
     setKeyword(e.target.value);
   };
+
 
   return (
     <form onSubmit={handleSubmit}>

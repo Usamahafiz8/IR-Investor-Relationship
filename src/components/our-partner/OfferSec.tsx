@@ -6,7 +6,7 @@ import React from 'react';
 const OfferSec = () => {
    return (
       <>
-         <section className="bd-offer-area pt-150 pb-120">
+         <section className="bd-offer-area pt-50 pb-120">
             <div className="container">
                <div className="row wow fadeInUp" data-wow-delay=".5s">
                   {

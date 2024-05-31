@@ -1322,7 +1322,7 @@
 }
 
 .bd-blog-4 {
-    min-height: 548px;
+    min-height: 300px;
     border: 1px solid var(--bd-grey-1);
     position: relative;
     $self: &;
@@ -1334,7 +1334,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) -5.57%, rgba(0, 0, 0, 0.9) 94.43%);
+        background: rgba(128, 128, 128, 0.39); 
+        // background: linear-gradient(180deg, rgba(0, 0, 0, 0.233) -5.57%, rgba(0, 0, 0, 0.9) 94.43%);
         height: 100%;
         width: 100%;
         opacity: 1;

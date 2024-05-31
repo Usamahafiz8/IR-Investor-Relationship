@@ -5,11 +5,8 @@ import React from 'react';
 const AboutPage = () => {
     return (
         <>
-            <WrapperCommon>
-                <main>
                     <AboutMain/>
-                </main>
-            </WrapperCommon>
+
         </>
     );
 };

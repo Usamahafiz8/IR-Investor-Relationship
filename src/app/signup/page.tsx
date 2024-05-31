@@ -5,11 +5,8 @@ import React from 'react';
 const SignUpPage = () => {
     return (
         <>
-            <WrapperCommon>
-                <main>
                     <SignUpMain />
-                </main>
-            </WrapperCommon>
+     
         </>
     );
 };

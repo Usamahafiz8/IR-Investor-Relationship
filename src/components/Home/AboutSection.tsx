@@ -1,37 +1,35 @@
 import React from "react";
 
-import "./home.css"; // Assuming you have your custom styles in home.css
-
-
 const data = [
   {
     heading: "Our Mission",
-    description: "Zacks Small Cap Research coverage specifically looks to focus on small and micro-cap companies that are under followed or under valued by Wall Street."
+    description: "IR coverage specifically focuses on small and micro-cap companies that are under-followed or undervalued by mainstream financial institutions."
   },
   {
     heading: "Our Process",
-    description: "The Zacks Small-Cap analyst team has an average of 20 years' experience in the investment field. We conduct significant due diligence in an effort to maintain the highest quality small-cap universe."
+    description: "The IR analyst team has an average of 20 years' experience in the investment field. We conduct thorough due diligence to maintain the highest quality small-cap universe."
   },
   {
     heading: "Our Valuations",
-    description: "Zacks SCR is a division of Zacks Investment Research (ZIR). ZIR is our parent company and also the parent company of Zacks.com."
+    description: "IR coverage specifically focuses on small and micro-cap companies that are under-followed or undervalued by mainstream financial institutions."
   }
 ];
 
 const AboutSection = () => {
   return (
     <>
-      <section className="bd-about__area pt-150 pb-50" style={{ backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.5))",  color: "white" }}>
-        <div className="container">
-          <div style={{ marginTop: "-200px" }}>
-            <div className="about-items">
-
+      <section className="pt-36 pb-12 bg-gradient-to-b from-black/20 to-white/50 text-white">
+        <div className="container mx-auto">
+          <div className="-mt-48">
+            <div className="grid gap-8 md:grid-cols-3">
               {data.map((item, index) => (
-                <div key={index} className="about-item">
-                  <div className="module_item-title--grow-underline"> {/* Add class for underline growth */}
+                <div key={index} className="text-center p-6 bg-white/10  shadow-lg bg-white">
+                  <div className="text-xl text-black font-semibold mb-4">
                     {item.heading}
                   </div>
-                  <div className="about-description">{item.description}</div>
+                  <h6 className="text-lg">
+                    {item.description}
+                  </h6>
                 </div>
               ))}
             </div>

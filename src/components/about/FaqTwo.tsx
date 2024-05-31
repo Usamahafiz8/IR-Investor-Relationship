@@ -36,8 +36,8 @@ const FaqTwo = () => {
             >
               <div className="row wow fadeInUp" data-wow-delay=".5s">
                 <div className="col-lg-6">
-                  {faqData?.slice(0, 3).map((item) => (
-                    <div key={item.id} className="accordion-item">
+                  {faqData?.slice(0, 3).map((item, index) => (
+                    <div key={index} className="accordion-item">
                       <h2
                         onClick={() => handleAccordionClick(item.id)}
                         className="accordion-header"
@@ -64,8 +64,8 @@ const FaqTwo = () => {
                   ))}
                 </div>
                 <div className="col-lg-6">
-                  {faqData?.slice(3, 6).map((item) => (
-                    <div key={item.id} className="accordion-item">
+                  {faqData?.slice(3, 6).map((item, index) => (
+                    <div key={index} className="accordion-item">
                       <h2
                         onClick={() => handleAccordionClick(item.id)}
                         className="accordion-header"
